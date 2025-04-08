@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customer Profile</title>
+</head>
+<body>
+    <form onsubmit="return validateCustomerForm()">
+     <h3>Customer Profile</h3>
+
+        <table>
+            <tr>
+                <td>Full Name</td>
+                <td>
+                    <input type="text" id="fullName" oninput="changeText()">
+                    <p id="nameError"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                    <input type="date" id="dob">
+                    <p id="dobError"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>License Number</td>
+                <td>
+                    <input type="text" id="licenseNumber">
+                    <p id="licenseError"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Upload License</td>
+                <td>
+                    <input type="file" id="licenseUpload" accept=".jpg,.jpeg,.png,.pdf">
+                    <p id="uploadError"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Preferences</td>
+                <td>
+                    <select id="preferences">
+                        <option value="">-- Select Preference --</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="suv">SUV</option>
+                        <option value="convertible">Convertible</option>
+                        <option value="electric">Electric</option>
+                    </select>
+                    <p id="prefError"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Rental History</td>
+                <td>
+                    <input type="text" id="rentalHistory">
+                    <p id="historyError"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit">
+                    <p id="validerror"></p>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="customer.js"></script>
+</body>
+</html>
