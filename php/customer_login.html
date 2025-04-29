@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Profile</title>
+</head>
+<body>
+    <form method="post" action="customer_login.php">
+        <h3>Customer Profile</h3>
+
+        Full Name: <input type="text" id="fullName" name="fullName" /> <br><br>
+
+        Date of Birth: <input type="date" id="dob" name="dob"/> <br><br>
+
+        License Number: <input type="text" id="licenseNumber" name="licenseNumber"/> <br><br>
+
+        
+
+        Preferences: 
+        <select id="preferences" name="preferences">
+            <option value="">-- Select Preference --</option>
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+            <option value="convertible">Convertible</option>
+            <option value="electric">Electric</option>
+        </select>
+       <br> <br>
+
+        Rental History: <input type="text" id="rentalHistory" name="rentalHistory"/> 
+<br> <br>
+
+<input type="submit" name="submit" value="Submit"/> <br>
+     
+    </form>
+
+</body>
+</html>
